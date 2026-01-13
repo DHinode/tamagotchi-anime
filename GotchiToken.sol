@@ -4,14 +4,14 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract AnimeFood is ERC20, Ownable {
-    // Mapping pour autoriser des contrats (comme le jeu) à mint des tokens
+contract GotchiToken is ERC20, Ownable {
     mapping(address => bool) public controllers;
 
-    constructor() ERC20("AnimeFood", "FOOD") Ownable(msg.sender) {
-        _mint(msg.sender, 1000 * 10 ** decimals()); // 1000 tokens pour toi au début
+    constructor() ERC20("GotchiFood", "FOOD") Ownable(msg.sender) {
+        _mint(msg.sender, 1000 * 10 ** decimals()); 
     }
 
+    // Fonction pour autoriser le contrat du Jeu
     function addController(address _controller) external onlyOwner {
         controllers[_controller] = true;
     }
