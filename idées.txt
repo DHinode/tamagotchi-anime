@@ -1,8 +1,0 @@
-Idées : 
-- Introduire la notion de duel 
-- 2 tamagotchi avec des portefeuilles équivalent
-  - l'argent sert à jouer, s'entraîner et manger avec lui pour le renforcer 
-- Variable force pour déterminer qui gagne le combat 
-- Peut travailler into dépression donc devient moins fort 
-- Fait crasher le pc si il devient fou 
-- 
